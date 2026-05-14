@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Bingo Privacy Policy</title>
+  <style>
+    :root {
+      --bg-top: #f8fafc;
+      --bg-bottom: #e8eefc;
+      --card: rgba(255, 255, 255, 0.92);
+      --card-border: rgba(148, 163, 184, 0.22);
+      --text: #152033;
+      --muted: #5f6d84;
+      --accent: #1d4ed8;
+      --accent-soft: rgba(29, 78, 216, 0.12);
+      --shadow: 0 20px 48px rgba(15, 23, 42, 0.10);
+      --radius: 24px;
+      --max-width: 860px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(59, 130, 246, 0.14), transparent 28%),
+        linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+      line-height: 1.65;
+    }
+
+    .page {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 32px 32px 16px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .brand-mark {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+      box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.10);
+      flex-shrink: 0;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 0;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(148, 163, 184, 0.20);
+      border-radius: 999px;
+      flex-shrink: 0;
+    }
+
+    .lang-switch button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    .lang-switch button:hover {
+      color: var(--text);
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 10px 18px rgba(29, 78, 216, 0.22);
+    }
+
+    .lang-switch button:focus-visible {
+      outline: 2px solid rgba(29, 78, 216, 0.32);
+      outline-offset: 2px;
+    }
+
+    .policy {
+      padding: 28px 32px 36px;
+    }
+
+    .language-content[hidden] {
+      display: none !important;
+    }
+
+    .meta {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section + section {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(148, 163, 184, 0.14);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      margin-top: 28px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      color: #1e3a8a;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, SFMono-Regular, Menlo, monospace;
+      font-size: 0.92em;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 20px 14px 40px;
+      }
+
+      .hero,
+      .policy {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .hero-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .lang-switch {
+        width: fit-content;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header class="hero">
+        <div class="hero-top">
+          <div>
+            <div class="brand">
+              <span class="brand-mark" aria-hidden="true"></span>
+              <span>Movie Bingo</span>
+            </div>
+            <h1 id="page-title">Privacy Policy</h1>
+            <p class="subtitle" id="page-subtitle">
+              Information about how Movie Bingo handles data and privacy for App Store users.
+            </p>
+          </div>
+
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button type="button" data-language-button="en" aria-pressed="true">English</button>
+            <button type="button" data-language-button="pl" aria-pressed="false">Polski</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="policy">
+        <div class="language-content" data-language-content="en">
+          <p class="meta">Effective date: May 14, 2026</p>
+
+          <section>
+            <h2>1. Introduction</h2>
+            <p>
+              This Privacy Policy describes how Movie Bingo (“the App”) handles information when you use the App.
+              Movie Bingo is designed as a local companion app for movie and series sessions and is intended to provide
+              users with transparency regarding data handling practices.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. Data Collection</h2>
+            <p>
+              Movie Bingo does not require account registration and does not collect personal data through a remote
+              backend or user account system.
+            </p>
+            <p>
+              Information entered by the user inside the App, including group names, player names, Bingo entries,
+              session history, scores, and related gameplay data, is stored locally on the user’s device.
+            </p>
+          </section>
+
+          <section>
+            <h2>3. Photos and Media</h2>
+            <p>
+              The App may allow the user to select photos or avatars using iOS system-provided photo picker features.
+              If the user chooses to provide such media, the selected content is used only within the App and stored
+              locally on the device.
+            </p>
+          </section>
+
+          <section>
+            <h2>4. Analytics, Advertising, and Tracking</h2>
+            <p>
+              Movie Bingo does not use third-party advertising services, does not perform cross-app or cross-website
+              tracking, and does not sell personal information.
+            </p>
+            <p>
+              Based on the current implementation of the App, no analytics SDKs, advertising SDKs, or tracking
+              frameworks are integrated.
+            </p>
+          </section>
+
+          <section>
+            <h2>5. Data Sharing</h2>
+            <p>
+              Movie Bingo does not share personal data with third parties. User-generated content remains on the device
+              unless the user explicitly chooses to share exported content through system features made available by iOS.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. Data Retention</h2>
+            <p>
+              Data created within the App is retained locally on the device until the user deletes the App or removes
+              the relevant local data.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. User Choices</h2>
+            <p>
+              Users control the information stored within Movie Bingo on their device. Because the App does not rely on
+              remote user accounts, removal of local data is managed directly by the user on the device.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Children’s Privacy</h2>
+            <p>
+              Movie Bingo is not intended to knowingly collect personal data from children. The App does not include
+              account creation, remote profile collection, or server-side personal data submission features.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Changes to This Policy</h2>
+            <p>
+              This Privacy Policy may be updated from time to time to reflect changes in the App or applicable legal
+              requirements. The effective date shown at the top of this page will indicate the latest revision.
+            </p>
+          </section>
+
+          <p class="footer">Movie Bingo</p>
+        </div>
+
+        <div class="language-content" data-language-content="pl" hidden>
+          <p class="meta">Data wejścia w życie: 14 maja 2026</p>
+
+          <section>
+            <h2>1. Wprowadzenie</h2>
+            <p>
+              Niniejsza Polityka Prywatności opisuje sposób przetwarzania informacji przez aplikację Movie Bingo
+              („Aplikacja”) podczas korzystania z niej przez użytkownika. Movie Bingo zostało zaprojektowane jako
+              lokalna aplikacja towarzysząca do seansów filmowych i serialowych oraz ma na celu zapewnienie
+              przejrzystości w zakresie praktyk dotyczących danych.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. Gromadzenie danych</h2>
+            <p>
+              Movie Bingo nie wymaga tworzenia konta i nie gromadzi danych osobowych za pośrednictwem zdalnego backendu
+              ani systemu kont użytkowników.
+            </p>
+            <p>
+              Informacje wprowadzane przez użytkownika w Aplikacji, w tym nazwy grup, nazwy graczy, wpisy Bingo,
+              historia seansów, wyniki punktowe oraz powiązane dane rozgrywki, są przechowywane lokalnie na urządzeniu
+              użytkownika.
+            </p>
+          </section>
+
+          <section>
+            <h2>3. Zdjęcia i multimedia</h2>
+            <p>
+              Aplikacja może umożliwiać użytkownikowi wybór zdjęć lub avatarów z wykorzystaniem systemowego selektora
+              zdjęć iOS. Jeżeli użytkownik zdecyduje się dodać takie materiały, wybrane treści są wykorzystywane
+              wyłącznie wewnątrz Aplikacji i przechowywane lokalnie na urządzeniu.
+            </p>
+          </section>
+
+          <section>
+            <h2>4. Analityka, reklamy i śledzenie</h2>
+            <p>
+              Movie Bingo nie korzysta z zewnętrznych usług reklamowych, nie prowadzi śledzenia użytkowników pomiędzy
+              aplikacjami ani stronami internetowymi oraz nie sprzedaje danych osobowych.
+            </p>
+            <p>
+              Zgodnie z aktualną implementacją Aplikacji nie są zintegrowane żadne SDK analityczne, reklamowe ani
+              frameworki śledzące.
+            </p>
+          </section>
+
+          <section>
+            <h2>5. Udostępnianie danych</h2>
+            <p>
+              Movie Bingo nie udostępnia danych osobowych podmiotom trzecim. Treści tworzone przez użytkownika
+              pozostają na urządzeniu, chyba że użytkownik sam zdecyduje się udostępnić wyeksportowane treści przy
+              użyciu funkcji systemowych udostępnianych przez iOS.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. Okres przechowywania danych</h2>
+            <p>
+              Dane utworzone w Aplikacji są przechowywane lokalnie na urządzeniu do momentu usunięcia Aplikacji lub
+              usunięcia odpowiednich danych lokalnych przez użytkownika.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. Wybory użytkownika</h2>
+            <p>
+              Użytkownik kontroluje informacje przechowywane w Movie Bingo na swoim urządzeniu. Ponieważ Aplikacja nie
+              korzysta ze zdalnych kont użytkowników, usuwanie danych lokalnych jest zarządzane bezpośrednio przez
+              użytkownika na urządzeniu.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Prywatność dzieci</h2>
+            <p>
+              Movie Bingo nie jest przeznaczone do świadomego gromadzenia danych osobowych dzieci. Aplikacja nie
+              zawiera funkcji tworzenia kont, zdalnego zbierania profili ani serwerowego przesyłania danych osobowych.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Zmiany w Polityce Prywatności</h2>
+            <p>
+              Niniejsza Polityka Prywatności może być okresowo aktualizowana w celu odzwierciedlenia zmian w
+              Aplikacji lub wymagań prawnych. Data wejścia w życie podana na górze strony wskazuje datę ostatniej
+              aktualizacji.
+            </p>
+          </section>
+
+          <p class="footer">Movie Bingo</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      const STORAGE_KEY = "movie-bingo-privacy-language";
+      const buttons = Array.from(document.querySelectorAll("[data-language-button]"));
+      const sections = Array.from(document.querySelectorAll("[data-language-content]"));
+      const title = document.getElementById("page-title");
+      const subtitle = document.getElementById("page-subtitle");
+
+      const copy = {
+        en: {
+          pageTitle: "Privacy Policy",
+          pageSubtitle: "Information about how Movie Bingo handles data and privacy for App Store users.",
+          documentTitle: "Movie Bingo Privacy Policy",
+          lang: "en"
+        },
+        pl: {
+          pageTitle: "Polityka Prywatności",
+          pageSubtitle: "Informacje o tym, jak Movie Bingo przetwarza dane i chroni prywatność użytkowników App Store.",
+          documentTitle: "Movie Bingo Polityka Prywatności",
+          lang: "pl"
+        }
+      };
+
+      function setLanguage(nextLanguage) {
+        const language = copy[nextLanguage] ? nextLanguage : "en";
+
+        sections.forEach((section) => {
+          const isActive = section.getAttribute("data-language-content") === language;
+          section.hidden = !isActive;
+        });
+
+        buttons.forEach((button) => {
+          const isActive = button.getAttribute("data-language-button") === language;
+          button.classList.toggle("active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        title.textContent = copy[language].pageTitle;
+        subtitle.textContent = copy[language].pageSubtitle;
+        document.title = copy[language].documentTitle;
+        document.documentElement.lang = copy[language].lang;
+        localStorage.setItem(STORAGE_KEY, language);
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          setLanguage(button.getAttribute("data-language-button"));
+        });
+      });
+
+      const storedLanguage = localStorage.getItem(STORAGE_KEY);
+      setLanguage(storedLanguage || "en");
+    }());
+  </script>
+</body>
+</html>
