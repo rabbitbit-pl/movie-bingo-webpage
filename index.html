@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Movie Bingo Privacy Policy</title>
+  <title>Movie Bingo Support</title>
   <style>
     :root {
       --bg-top: #f8fafc;
@@ -23,17 +23,13 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(59, 130, 246, 0.14), transparent 28%),
-        linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+              radial-gradient(circle at top left, rgba(59, 130, 246, 0.14), transparent 28%),
+              linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
       line-height: 1.65;
     }
 
@@ -121,11 +117,7 @@
       padding: 10px 16px;
       border-radius: 999px;
       cursor: pointer;
-      transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
-    }
-
-    .lang-switch button:hover {
-      color: var(--text);
+      transition: background-color 160ms ease, color 160ms ease;
     }
 
     .lang-switch button.active {
@@ -134,12 +126,7 @@
       box-shadow: 0 10px 18px rgba(29, 78, 216, 0.22);
     }
 
-    .lang-switch button:focus-visible {
-      outline: 2px solid rgba(29, 78, 216, 0.32);
-      outline-offset: 2px;
-    }
-
-    .policy {
+    .content {
       padding: 28px 32px 36px;
     }
 
@@ -188,13 +175,11 @@
       text-decoration: underline;
     }
 
-    .notice {
-      margin-top: 28px;
-      padding: 16px 18px;
+    .panel {
+      margin-top: 24px;
+      padding: 18px 20px;
       border-radius: 16px;
       background: var(--accent-soft);
-      color: #1e3a8a;
-      font-size: 0.95rem;
     }
 
     .footer {
@@ -203,18 +188,13 @@
       font-size: 0.92rem;
     }
 
-    code {
-      font-family: ui-monospace, SFMono-Regular, SFMono-Regular, Menlo, monospace;
-      font-size: 0.92em;
-    }
-
     @media (max-width: 720px) {
       .page {
         padding: 20px 14px 40px;
       }
 
       .hero,
-      .policy {
+      .content {
         padding-left: 20px;
         padding-right: 20px;
       }
@@ -231,266 +211,198 @@
   </style>
 </head>
 <body>
-  <main class="page">
-    <article class="card">
-      <header class="hero">
-        <div class="hero-top">
-          <div>
-            <div class="brand">
-              <span class="brand-mark" aria-hidden="true"></span>
-              <span>Movie Bingo</span>
-            </div>
-            <h1 id="page-title">Privacy Policy</h1>
-            <p class="subtitle" id="page-subtitle">
-              Information about how Movie Bingo handles data and privacy for App Store users.
-            </p>
+<main class="page">
+  <article class="card">
+    <header class="hero">
+      <div class="hero-top">
+        <div>
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Movie Bingo</span>
           </div>
-
-          <div class="lang-switch" role="group" aria-label="Language switch">
-            <button type="button" data-language-button="en" aria-pressed="true">English</button>
-            <button type="button" data-language-button="pl" aria-pressed="false">Polski</button>
-          </div>
-        </div>
-      </header>
-
-      <div class="policy">
-        <div class="language-content" data-language-content="en">
-          <p class="meta">Effective date: May 14, 2026</p>
-
-          <section>
-            <h2>1. Introduction</h2>
-            <p>
-              This Privacy Policy describes how Movie Bingo (“the App”) handles information when you use the App.
-              Movie Bingo is designed as a local companion app for movie and series sessions and is intended to provide
-              users with transparency regarding data handling practices.
-            </p>
-          </section>
-
-          <section>
-            <h2>2. Data Collection</h2>
-            <p>
-              Movie Bingo does not require account registration and does not collect personal data through a remote
-              backend or user account system.
-            </p>
-            <p>
-              Information entered by the user inside the App, including group names, player names, Bingo entries,
-              session history, scores, and related gameplay data, is stored locally on the user’s device.
-            </p>
-          </section>
-
-          <section>
-            <h2>3. Photos and Media</h2>
-            <p>
-              The App may allow the user to select photos or avatars using iOS system-provided photo picker features.
-              If the user chooses to provide such media, the selected content is used only within the App and stored
-              locally on the device.
-            </p>
-          </section>
-
-          <section>
-            <h2>4. Analytics, Advertising, and Tracking</h2>
-            <p>
-              Movie Bingo does not use third-party advertising services, does not perform cross-app or cross-website
-              tracking, and does not sell personal information.
-            </p>
-            <p>
-              Based on the current implementation of the App, no analytics SDKs, advertising SDKs, or tracking
-              frameworks are integrated.
-            </p>
-          </section>
-
-          <section>
-            <h2>5. Data Sharing</h2>
-            <p>
-              Movie Bingo does not share personal data with third parties. User-generated content remains on the device
-              unless the user explicitly chooses to share exported content through system features made available by iOS.
-            </p>
-          </section>
-
-          <section>
-            <h2>6. Data Retention</h2>
-            <p>
-              Data created within the App is retained locally on the device until the user deletes the App or removes
-              the relevant local data.
-            </p>
-          </section>
-
-          <section>
-            <h2>7. User Choices</h2>
-            <p>
-              Users control the information stored within Movie Bingo on their device. Because the App does not rely on
-              remote user accounts, removal of local data is managed directly by the user on the device.
-            </p>
-          </section>
-
-          <section>
-            <h2>8. Children’s Privacy</h2>
-            <p>
-              Movie Bingo is not intended to knowingly collect personal data from children. The App does not include
-              account creation, remote profile collection, or server-side personal data submission features.
-            </p>
-          </section>
-
-          <section>
-            <h2>9. Changes to This Policy</h2>
-            <p>
-              This Privacy Policy may be updated from time to time to reflect changes in the App or applicable legal
-              requirements. The effective date shown at the top of this page will indicate the latest revision.
-            </p>
-          </section>
-
-          <p class="footer">Movie Bingo</p>
+          <h1 id="page-title">Support</h1>
+          <p class="subtitle" id="page-subtitle">
+            Help, contact information, and basic guidance for Movie Bingo users.
+          </p>
         </div>
 
-        <div class="language-content" data-language-content="pl" hidden>
-          <p class="meta">Data wejścia w życie: 14 maja 2026</p>
-
-          <section>
-            <h2>1. Wprowadzenie</h2>
-            <p>
-              Niniejsza Polityka Prywatności opisuje sposób przetwarzania informacji przez aplikację Movie Bingo
-              („Aplikacja”) podczas korzystania z niej przez użytkownika. Movie Bingo zostało zaprojektowane jako
-              lokalna aplikacja towarzysząca do seansów filmowych i serialowych oraz ma na celu zapewnienie
-              przejrzystości w zakresie praktyk dotyczących danych.
-            </p>
-          </section>
-
-          <section>
-            <h2>2. Gromadzenie danych</h2>
-            <p>
-              Movie Bingo nie wymaga tworzenia konta i nie gromadzi danych osobowych za pośrednictwem zdalnego backendu
-              ani systemu kont użytkowników.
-            </p>
-            <p>
-              Informacje wprowadzane przez użytkownika w Aplikacji, w tym nazwy grup, nazwy graczy, wpisy Bingo,
-              historia seansów, wyniki punktowe oraz powiązane dane rozgrywki, są przechowywane lokalnie na urządzeniu
-              użytkownika.
-            </p>
-          </section>
-
-          <section>
-            <h2>3. Zdjęcia i multimedia</h2>
-            <p>
-              Aplikacja może umożliwiać użytkownikowi wybór zdjęć lub avatarów z wykorzystaniem systemowego selektora
-              zdjęć iOS. Jeżeli użytkownik zdecyduje się dodać takie materiały, wybrane treści są wykorzystywane
-              wyłącznie wewnątrz Aplikacji i przechowywane lokalnie na urządzeniu.
-            </p>
-          </section>
-
-          <section>
-            <h2>4. Analityka, reklamy i śledzenie</h2>
-            <p>
-              Movie Bingo nie korzysta z zewnętrznych usług reklamowych, nie prowadzi śledzenia użytkowników pomiędzy
-              aplikacjami ani stronami internetowymi oraz nie sprzedaje danych osobowych.
-            </p>
-            <p>
-              Zgodnie z aktualną implementacją Aplikacji nie są zintegrowane żadne SDK analityczne, reklamowe ani
-              frameworki śledzące.
-            </p>
-          </section>
-
-          <section>
-            <h2>5. Udostępnianie danych</h2>
-            <p>
-              Movie Bingo nie udostępnia danych osobowych podmiotom trzecim. Treści tworzone przez użytkownika
-              pozostają na urządzeniu, chyba że użytkownik sam zdecyduje się udostępnić wyeksportowane treści przy
-              użyciu funkcji systemowych udostępnianych przez iOS.
-            </p>
-          </section>
-
-          <section>
-            <h2>6. Okres przechowywania danych</h2>
-            <p>
-              Dane utworzone w Aplikacji są przechowywane lokalnie na urządzeniu do momentu usunięcia Aplikacji lub
-              usunięcia odpowiednich danych lokalnych przez użytkownika.
-            </p>
-          </section>
-
-          <section>
-            <h2>7. Wybory użytkownika</h2>
-            <p>
-              Użytkownik kontroluje informacje przechowywane w Movie Bingo na swoim urządzeniu. Ponieważ Aplikacja nie
-              korzysta ze zdalnych kont użytkowników, usuwanie danych lokalnych jest zarządzane bezpośrednio przez
-              użytkownika na urządzeniu.
-            </p>
-          </section>
-
-          <section>
-            <h2>8. Prywatność dzieci</h2>
-            <p>
-              Movie Bingo nie jest przeznaczone do świadomego gromadzenia danych osobowych dzieci. Aplikacja nie
-              zawiera funkcji tworzenia kont, zdalnego zbierania profili ani serwerowego przesyłania danych osobowych.
-            </p>
-          </section>
-
-          <section>
-            <h2>9. Zmiany w Polityce Prywatności</h2>
-            <p>
-              Niniejsza Polityka Prywatności może być okresowo aktualizowana w celu odzwierciedlenia zmian w
-              Aplikacji lub wymagań prawnych. Data wejścia w życie podana na górze strony wskazuje datę ostatniej
-              aktualizacji.
-            </p>
-          </section>
-
-          <p class="footer">Movie Bingo</p>
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button type="button" data-language-button="en" aria-pressed="true">English</button>
+          <button type="button" data-language-button="pl" aria-pressed="false">Polski</button>
         </div>
       </div>
-    </article>
-  </main>
+    </header>
 
-  <script>
-    (function () {
-      const STORAGE_KEY = "movie-bingo-privacy-language";
-      const buttons = Array.from(document.querySelectorAll("[data-language-button]"));
-      const sections = Array.from(document.querySelectorAll("[data-language-content]"));
-      const title = document.getElementById("page-title");
-      const subtitle = document.getElementById("page-subtitle");
+    <div class="content">
+      <div class="language-content" data-language-content="en">
+        <p class="meta">Last updated: May 17, 2026</p>
 
-      const copy = {
-        en: {
-          pageTitle: "Privacy Policy",
-          pageSubtitle: "Information about how Movie Bingo handles data and privacy for App Store users.",
-          documentTitle: "Movie Bingo Privacy Policy",
-          lang: "en"
-        },
-        pl: {
-          pageTitle: "Polityka Prywatności",
-          pageSubtitle: "Informacje o tym, jak Movie Bingo przetwarza dane i chroni prywatność użytkowników App Store.",
-          documentTitle: "Movie Bingo Polityka Prywatności",
-          lang: "pl"
-        }
-      };
+        <section>
+          <h2>About Movie Bingo</h2>
+          <p>
+            Movie Bingo is a local social companion app for movie nights and series sessions. It lets players create
+            Bingo predictions, track hits and failed entries, and compare results at the end of a session.
+          </p>
+        </section>
 
-      function setLanguage(nextLanguage) {
-        const language = copy[nextLanguage] ? nextLanguage : "en";
+        <section>
+          <h2>Need Help?</h2>
+          <p>
+            If you need support related to the app, bug reports, feature suggestions, or general questions, please
+            contact the developer at:
+          </p>
+          <p>
+            <a id="support-email-en" href="#">Contact by email</a>
+          </p>
+        </section>
 
-        sections.forEach((section) => {
-          const isActive = section.getAttribute("data-language-content") === language;
-          section.hidden = !isActive;
-        });
+        <section>
+          <h2>Common Topics</h2>
+          <ul>
+            <li>Questions about how sessions, scoring, and Bingo predictions work</li>
+            <li>Problems with app behavior or saved local data</li>
+            <li>Suggestions for improving the gameplay experience</li>
+            <li>Feedback about language, accessibility, or interface issues</li>
+          </ul>
+        </section>
 
-        buttons.forEach((button) => {
-          const isActive = button.getAttribute("data-language-button") === language;
-          button.classList.toggle("active", isActive);
-          button.setAttribute("aria-pressed", String(isActive));
-        });
+        <section>
+          <h2>Privacy Policy</h2>
+          <p>
+            For information about how Movie Bingo handles data and privacy, please review the Privacy Policy page.
+          </p>
+          <p>
+            <a href="./index.html">Open Privacy Policy</a>
+          </p>
+        </section>
 
-        title.textContent = copy[language].pageTitle;
-        subtitle.textContent = copy[language].pageSubtitle;
-        document.title = copy[language].documentTitle;
-        document.documentElement.lang = copy[language].lang;
-        localStorage.setItem(STORAGE_KEY, language);
+        <p class="footer">Movie Bingo</p>
+      </div>
+
+      <div class="language-content" data-language-content="pl" hidden>
+        <p class="meta">Ostatnia aktualizacja: 17 maja 2026</p>
+
+        <section>
+          <h2>O aplikacji Movie Bingo</h2>
+          <p>
+            Movie Bingo to lokalna aplikacja towarzysząca do wspólnego oglądania filmów i seriali. Umożliwia
+            tworzenie przewidywań Bingo, oznaczanie trafień i spalonych wpisów oraz porównywanie wyników po
+            zakończeniu seansu.
+          </p>
+        </section>
+
+        <section>
+          <h2>Potrzebujesz pomocy?</h2>
+          <p>
+            Jeśli potrzebujesz wsparcia dotyczącego aplikacji, chcesz zgłosić błąd, zaproponować nową funkcję lub
+            zadać ogólne pytanie, skontaktuj się z deweloperem pod adresem:
+          </p>
+          <p>
+            <a id="support-email-pl" href="#">Napisz e-mail</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Najczęstsze tematy</h2>
+          <ul>
+            <li>Pytania o działanie seansów, punktacji i przewidywań Bingo</li>
+            <li>Problemy z działaniem aplikacji lub lokalnie zapisanymi danymi</li>
+            <li>Propozycje ulepszeń rozgrywki</li>
+            <li>Uwagi dotyczące języka, dostępności lub interfejsu</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Polityka Prywatności</h2>
+          <p>
+            Informacje o tym, jak Movie Bingo przetwarza dane i chroni prywatność, znajdziesz na stronie Polityki
+            Prywatności.
+          </p>
+          <p>
+            <a href="./index.html">Otwórz Politykę Prywatności</a>
+          </p>
+        </section>
+
+        <div class="panel">
+          Przed publikacją podmień <strong>your-email@example.com</strong> na swój rzeczywisty adres kontaktowy.
+        </div>
+
+        <p class="footer">Movie Bingo</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<script>
+  (function () {
+    const STORAGE_KEY = "movie-bingo-support-language";
+    const buttons = Array.from(document.querySelectorAll("[data-language-button]"));
+    const sections = Array.from(document.querySelectorAll("[data-language-content]"));
+    const title = document.getElementById("page-title");
+    const subtitle = document.getElementById("page-subtitle");
+
+    const emailUser = "krolikdev";
+    const emailDomain = "outlook.com";
+    const email = emailUser + "@" + emailDomain;
+
+    const enLink = document.getElementById("support-email-en");
+    const plLink = document.getElementById("support-email-pl");
+
+    if (enLink) {
+      enLink.href = "mailto:" + email;
+      enLink.textContent = email;
+    }
+
+    if (plLink) {
+      plLink.href = "mailto:" + email;
+      plLink.textContent = email;
+    }
+
+    const copy = {
+      en: {
+        pageTitle: "Support",
+        pageSubtitle: "Help, contact information, and basic guidance for Movie Bingo users.",
+        documentTitle: "Movie Bingo Support",
+        lang: "en"
+      },
+      pl: {
+        pageTitle: "Wsparcie",
+        pageSubtitle: "Pomoc, dane kontaktowe i podstawowe informacje dla użytkowników Movie Bingo.",
+        documentTitle: "Movie Bingo Wsparcie",
+        lang: "pl"
       }
+    };
 
-      buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-          setLanguage(button.getAttribute("data-language-button"));
-        });
+    function setLanguage(nextLanguage) {
+      const language = copy[nextLanguage] ? nextLanguage : "en";
+
+      sections.forEach((section) => {
+        const isActive = section.getAttribute("data-language-content") === language;
+        section.hidden = !isActive;
       });
 
-      const storedLanguage = localStorage.getItem(STORAGE_KEY);
-      setLanguage(storedLanguage || "en");
-    }());
-  </script>
+      buttons.forEach((button) => {
+        const isActive = button.getAttribute("data-language-button") === language;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+
+      title.textContent = copy[language].pageTitle;
+      subtitle.textContent = copy[language].pageSubtitle;
+      document.title = copy[language].documentTitle;
+      document.documentElement.lang = copy[language].lang;
+      localStorage.setItem(STORAGE_KEY, language);
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        setLanguage(button.getAttribute("data-language-button"));
+      });
+    });
+
+    const storedLanguage = localStorage.getItem(STORAGE_KEY);
+    setLanguage(storedLanguage || "en");
+  }());
+</script>
 </body>
 </html>
